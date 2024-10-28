@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+</head>
+
+<body>
+    <nav class="nav-pages">
+        <a href="index.html">Game 1</a>
+        <a href="9-game.html">Game 2</a>
+    </nav>
+    <style>
+        .nav-pages {
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .nav-pages a {
+            background-color: rgb(44, 128, 238);
+            padding: 5px;
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+    <h1 class="bg-blue m-0 txt-c c-white p-20">Word Game Type</h1>
+    <div class="area">
+        <div class="title bg-white txt-c p-15">
+            You Are Playing <span class="level c-blue"></span> Level & You Have <span class="length c-blue"></span>
+            Scendes to
+            Type The Word
+        </div>
+        <div class="level-bar p-15 bg-white rad-6">
+            Add Your level :
+            <input type="radio" name="lvl" id="easy" value="easy"><label for="easy">Easy</label>
+            <input type="radio" name="lvl" id="normal" value="normal" checked><label for="normal">Normal</label>
+            <input type="radio" name="lvl" id="hard" value="hard"><label for="hard">Haed</label>
+        </div>
+        <div class="word-span c-blue fs-25 txt-c"></div>
+        <button class="w-full fs-25 b-none c-white bg-blue d-block p-15">Start</button>
+        <input class="word-input p-15 txt-c fs-25 w-full brd bg-white" type="text">
+        <div class="words-show bg-white p-15 txt-c">Word will Show Here</div>
+        <div class="info between-flex bg-white p-15">
+            <span>Time Left <span class="time c-red"></span> Sec</span>
+            <span>Score <span class="score c-blue"></span> From <span class="info-length c-blue"></span></span>
+        </div>
+        <div class="user"></div>
+    </div>
+    <script src="scripet.js"></script>
+</body>
+
+</html>

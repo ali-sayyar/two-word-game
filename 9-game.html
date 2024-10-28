@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="9-game.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="nav-pages">
+    <a href="index.html">Game 1</a>
+    <a href="9-game.html">Game 2</a>
+  </nav>
+  <style>
+    .nav-pages {
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .nav-pages a {
+      background-color: rgb(44, 128, 238);
+      padding: 5px;
+      border-radius: 5px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+  <div class="game">
+    <div class="name">Typing Speed Test Game</div>
+    <div class="container">
+
+      <div class="levels">
+        <span class="lvl-btn">Click here to select the level</span>
+        <ul class="level display">
+          <li data-lvl="Easy" class="li">Easy</li>
+          <li data-lvl="Normal" class="li">Normal</li>
+          <li data-lvl="Hard" class="li">Hard</li>
+          <input type="number" class="lvl-inp" maxlength="2" placeholder="Enter seconds">
+          <button type="submit" class="li" data-lvl="Auto">OK</button>
+        </ul>
+      </div>
+
+      <input type="text" class="set-input" placeholder="Enter the text you want to convert to words."><button
+        class="set-btn">SET</button>
+
+      <div class="message">
+        You Are Playing On
+        <span class="lvl"></span> Level & You Have
+        <span class="seconds"></span> Seconds To Type The Word
+      </div>
+      <div class="start">Start Playing</div>
+      <div class="the-word"></div>
+      <input type="text" class="input">
+      <div class="upcoming-words">Words Will Show Here</div>
+      <div class="control">
+        <div class="time">Time Left: <span></span> Seconds</div>
+        <div class="score">
+          Score: <span class="got">0</span> From <span class="total"></span>
+        </div>
+      </div>
+      <div class="finish"></div>
+      <button class="btn">Try Agine</button>
+
+    </div>
+  </div>
+
+  <script src="9-game.js"></script>
+</body>
+
+</html>
